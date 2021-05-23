@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" href="./styles.css" />
-  <script src="./app.js" defer></script>
   <head>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -35,14 +35,15 @@
         <div class="hero__content">
           <div class="projects__content-txt">
             <h1 class="hero__title">
-              Hi, I'm <span class="secondary-color">Manon Locht</span>
+              Hi, I’m <span class="secondary-color">Manon Locht</span>
             </h1>
-            <p class="hero__content">
-              I'm a first-year CS student at University of London, interested in
+            <p class="hero__text">
+              I’m a first-year CS student at University of London, interested in
               all things related to frontend web development.
             </p>
           </div>
           <img
+            class="hero__img"
             src="./resources/afbkvqV0.png"
             alt="Website logo"
             sizes=""
@@ -57,11 +58,13 @@
         </div>
         <div class="projects__content">
           <div class="project__card">
-            <img
-              src="./resources/Nezhas-journey.png"
-              alt="A screenshot from 2D platform game Nezha's Journey"
-              class="projects__img"
-            />
+            <div class="img">
+              <img
+                src="./resources/Nezhas-journey.png"
+                alt="A screenshot from 2D platform game Nezha's Journey"
+                class="project__img nezha"
+              />
+            </div>
             <h3 class="project__title">Nezha's Journey</h3>
             <p class="project__text">
               A simple 2D platform game made with P5.js
@@ -71,7 +74,7 @@
             <img
               src="./resources/kobrd.png"
               alt="A screenshot from Korean typing app Kobrd"
-              class="projects__img"
+              class="project__img kobrd"
             />
             <h3 class="project__title">Kobrd</h3>
             <p class="project__text">
@@ -117,7 +120,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer row">
       <p class="source secondary-color">
         (c)
         <a href="https://github.com/web-Nuo/portfolio" target="_blank"
@@ -128,3 +131,6 @@
     </footer>
   </body>
 </html>
+
+<!-- Hi, I’m Manon Locht -->
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
