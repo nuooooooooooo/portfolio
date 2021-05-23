@@ -9,30 +9,34 @@
     <title>Software Developer | Manon Locht</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__content">
-        <div class="header__logo">
-          <a href="/"
-            ><img
-              src="./resources/hx5lPaXD.png"
-              alt=""
-              class="header__logo-img"
-          /></a>
-        </div>
-        <nav class="nav">
-          <!-- hamburger goes here -->
-          <ul class="nav__list">
-            <li class="nav__list-item"><a href="">Projects</a></li>
-            <li class="nav__list-item"><a href="">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
     <main class="main">
+      <header class="header">
+        <div class="header__content row">
+          <div class="header__logo">
+            <a href="/"
+              ><img
+                src="./resources/hx5lPaXD.png"
+                alt=""
+                class="header__logo-img"
+            /></a>
+          </div>
+          <a href="#" class="toggle-nav">
+            <img class="test" src="./resources/menu.svg" alt="" />
+          </a>
+          <nav class="nav row">
+            <ul class="nav__list">
+              <li class="nav__list-item"><a href="">Projects</a></li>
+              <li class="nav__list-item"><a href="">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
       <section class="hero">
         <div class="hero__content">
           <div class="projects__content-txt">
-            <h1 class="hero__title">Hi, I'm Manon Locht</h1>
+            <h1 class="hero__title">
+              Hi, I'm <span class="secondary-color">Manon Locht</span>
+            </h1>
             <p class="hero__content">
               I'm a first-year CS student at University of London, interested in
               all things related to frontend web development.
@@ -47,7 +51,10 @@
         </div>
       </section>
       <section class="projects">
-        <h2 class="projects__title">Latest Projects</h2>
+        <div class="projects__title">
+          <h2 class="projects__title-text">Latest Projects</h2>
+          <div class="line secondary-color"></div>
+        </div>
         <div class="projects__content">
           <div class="project__card">
             <img
@@ -75,6 +82,10 @@
         </div>
       </section>
       <section class="contacts">
+        <div class="contacts__title">
+          <h2 class="contacts__title-text">Contact Me</h2>
+          <div class="line secondary-color"></div>
+        </div>
         <div class="contacts__content">
           <ul class="contacts__list">
             <li class="contacts__list-item">
@@ -107,7 +118,7 @@
       </section>
     </main>
     <footer class="footer">
-      <p class="source">
+      <p class="source secondary-color">
         (c)
         <a href="https://github.com/web-Nuo/portfolio" target="_blank"
           >Manon Locht</a
