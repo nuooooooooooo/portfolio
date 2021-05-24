@@ -31,6 +31,7 @@ const rotateHues = [
   [0, 140],
 ];
 
+// script for the project hue and color palette changes
 let randomIndex = Math.floor(Math.random() * 7);
 const imgHueNezha = document.querySelector(".nezha");
 const imgKobdrd = document.querySelector(".kobrd");

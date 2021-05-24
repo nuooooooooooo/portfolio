@@ -158,10 +158,6 @@ h1 {
   margin-bottom: 1.4rem;
 }
 
-.hero__text {
-  font-size: ;
-}
-
 .hero__img {
   width: 50%;
   margin-top: 1rem;
@@ -238,56 +234,32 @@ h3 {
   margin-right: 1rem;
 }
 
-.contacts__content {
-  border: 2px solid red;
-}
-
-.googly-eyes {
-  display: none;
-}
-
-.wrapper {
-  border: 2px solid green;
-  display: inline-block;
+div.face {
   position: relative;
 }
 
-.iris {
+div.iris {
   position: absolute;
-  bottom: 63px;
-  left: 95px;
+  top: 101px;
+  left: 93px;
 }
 
-.iris-left {
-  left: 76px;
+div.iris-right {
+  left: 158px;
 }
 
-.iris-right {
-  left: 126px;
-}
-
-.iris div {
+div.iris div {
   position: relative;
-  bottom: 0;
+  top: 0;
   left: 0;
-  transform: translate(-50%, -50%);
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: var(--secondary-color);
   border-radius: 100%;
-  background-color: black;
+  transform: translate(-50%, -50%);
 }
 
 @media (min-width: 600px) {
-  .googly-eyes {
-    align-self: center;
-    flex: 1;
-    display: block;
-  }
-
-  .googly-eyes img {
-    width: 200px;
-  }
-
   .contacts__list {
     flex: 1;
   }
