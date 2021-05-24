@@ -32,10 +32,7 @@
       content="First-year CS student at University of London, interested in
               all things related to frontend web development."
     />
-    <meta
-      name="twitter:image"
-      content="https://scontent-bru2-1.xx.fbcdn.net/v/t1.15752-9/190199923_1111610842692725_1298288740482724905_n.png?_nc_cat=109&ccb=1-3&_nc_sid=ae9488&_nc_ohc=_yx_SocO8hgAX88hYkq&_nc_ht=scontent-bru2-1.xx&oh=3dcda3dc2a9a9d3624c1fac71be7a677&oe=60D32A85"
-    />
+    <meta name="twitter:image" content="./resources/sns-card.png" />
 
     <title>Software Developer | Manon Locht</title>
   </head>
@@ -56,8 +53,8 @@
           </a>
           <nav class="nav row">
             <ul class="nav__list row">
-              <li class="nav__list-item"><a href="">Projects</a></li>
-              <li class="nav__list-item"><a href="">Contact</a></li>
+              <li class="nav__list-item"><a href="#projects">Projects</a></li>
+              <li class="nav__list-item"><a href="#contact">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -82,7 +79,7 @@
       </section>
       <section class="projects">
         <div class="projects__title">
-          <h2 class="projects__title-text">Latest Projects</h2>
+          <h2 class="projects__title-text" id="projects">Latest Projects</h2>
           <div class="line secondary-color"></div>
         </div>
         <div class="projects__content row">
@@ -110,7 +107,9 @@
               alt="A screenshot from Korean typing app Kobrd"
               class="project__img kobrd"
             />
-            <h3 class="project__title">Kobrd</h3>
+            <h3 class="project__title">
+              <a href="https://web-nuo.github.io/Kobrd/">Kobrd</a>
+            </h3>
             <p class="project__text">
               A game to improve Korean typing skills. My first Javascript
               project.
@@ -120,7 +119,7 @@
       </section>
       <section class="contacts">
         <div class="contacts__title">
-          <h2 class="contacts__title-text">Contact Me</h2>
+          <h2 class="contacts__title-text" id="contact">Contact Me</h2>
           <div class="line secondary-color"></div>
         </div>
         <div class="contacts__content row">
@@ -140,6 +139,7 @@
               <a
                 href="https://www.linkedin.com/in/manon-locht/"
                 target="_blank"
+                rel="noopener"
                 class="contacts__link"
                 >Connect with me on LinkedIn</a
               >
@@ -182,6 +182,7 @@
                 href="https://github.com/web-Nuo"
                 target="_blank"
                 class="contacts__link"
+                rel="noopener"
                 >Find me on Github</a
               >
             </li>
@@ -200,6 +201,7 @@
               <a
                 href="https://twitter.com/partimecat"
                 target="_blank"
+                rel="noopener"
                 class="contacts__link"
                 >Follow me on Twitter</a
               >
@@ -220,7 +222,10 @@
     <footer class="footer row">
       <p class="source secondary-color">
         (c)
-        <a href="https://github.com/web-Nuo/portfolio" target="_blank"
+        <a
+          href="https://github.com/web-Nuo/portfolio"
+          rel="noopener"
+          target="_blank"
           >Manon Locht</a
         >
         - 2021

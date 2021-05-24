@@ -20,7 +20,6 @@ const moveEye = function (tag, mouseX, mouseY) {
   // find the difference between the eye and the mouse
   const diffX = mouseX - eyeMidX;
   const diffY = mouseY - eyeMidY - window.pageYOffset;
-  console.log(diffX, diffY);
 
   //   pythagoras formula
   const diff = Math.sqrt(diffX * diffX + diffY * diffY);
