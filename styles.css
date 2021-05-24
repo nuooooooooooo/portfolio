@@ -76,7 +76,8 @@ body {
 
 main {
   width: 85%;
-  margin: auto;
+  max-width: 980px;
+  margin: 0 auto;
 }
 
 header {
@@ -126,10 +127,6 @@ nav {
 
 .open {
   transform: translate(-100vw, 0);
-}
-
-.test {
-  fill: tomato;
 }
 
 .toggle-nav {
@@ -211,6 +208,10 @@ h3 {
   list-style: none;
 }
 
+.contacts__list-item {
+  flex-direction: row;
+}
+
 .contacts__list-item a {
   font-size: 1rem;
   text-decoration: none;
@@ -230,3 +231,68 @@ h3 {
 .source a {
   color: inherit;
 }
+
+.svg {
+  width: 30px;
+  fill: var(--secondary-color);
+  margin-right: 1rem;
+}
+
+.contacts__content {
+  border: 2px solid red;
+}
+
+.googly-eyes {
+  display: none;
+}
+
+.wrapper {
+  border: 2px solid green;
+  display: inline-block;
+  position: relative;
+}
+
+.iris {
+  position: absolute;
+  bottom: 63px;
+  left: 95px;
+}
+
+.iris-left {
+  left: 76px;
+}
+
+.iris-right {
+  left: 126px;
+}
+
+.iris div {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: black;
+}
+
+@media (min-width: 600px) {
+  .googly-eyes {
+    align-self: center;
+    flex: 1;
+    display: block;
+  }
+
+  .googly-eyes img {
+    width: 200px;
+  }
+
+  .contacts__list {
+    flex: 1;
+  }
+
+  .row {
+    flex-direction: row;
+  }
+} ;
