@@ -291,7 +291,6 @@ a:focus {
 }
 
 .svg {
-  width: 30px;
   fill: var(--secondary-color);
   margin-right: 1rem;
 }
