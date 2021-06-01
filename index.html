@@ -49,7 +49,7 @@
           <div class="header__logo">
             <a href="/"
               ><img
-                src="./resources/hx5lPaXD.png"
+                src="./resources/nav-logo.png"
                 alt=""
                 class="header__logo-img"
             /></a>
@@ -78,7 +78,11 @@
           </div>
           <img
             class="hero__img"
-            src="./resources/afbkvqV0.png"
+            srcset="
+              ./resources/hero-pic.png     710w,
+              ./resources/hero-pic_300.png 300w
+            "
+            sizes="(min-width: 600px) 30vw, 40vw"
             alt="Website logo"
           />
         </div>
@@ -93,7 +97,11 @@
             <div class="img">
               <img
                 loading="lazy"
-                src="./resources/Nezhas-journey.png"
+                srcset="
+                  ./resources/Nezhas-journey.png     1792w,
+                  ./resources/Nezhas-journey_500.png  500w
+                "
+                sizes="(min-width: 600px) 50vw, 90vw"
                 alt="A screenshot from 2D platform game Nezha's Journey"
                 class="project__img nezha"
               />
@@ -109,7 +117,11 @@
           <div class="project__card">
             <img
               loading="lazy"
-              src="./resources/kobrd.png"
+              srcset="
+                ./resources/kobrd.png     1474w,
+                ./resources/kobrd_500.png  500w
+              "
+              sizes="(min-width: 600px) 50vw, 90vw"
               alt="A screenshot from Korean typing app Kobrd"
               class="project__img kobrd"
             />
