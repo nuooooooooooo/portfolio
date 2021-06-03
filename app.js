@@ -11,6 +11,18 @@ toggleTag.addEventListener("click", function () {
   }
 });
 
+// script to close sidebar on link click
+const navLink = document.querySelectorAll(".nav__link");
+
+navLink.forEach(function (item) {
+  item.addEventListener("click", function () {
+    if (window.innerWidth < 700) {
+      navTag.classList.toggle("open");
+      toggleTag.innerHTML = `<img class="test" src="./resources/menu.svg">`;
+    }
+  });
+});
+
 const colors = [
   "#72ab69",
   "#92AB69",
@@ -35,9 +47,11 @@ const rotateHues = [
 let randomIndex = Math.floor(Math.random() * 7);
 const imgHueNezha = document.querySelector(".nezha");
 const imgKobdrd = document.querySelector(".kobrd");
+
 document.documentElement.style.setProperty(
   "--secondary-color",
   colors[randomIndex]
 );
+
 imgHueNezha.style.filter = `hue-rotate(${rotateHues[randomIndex][0]}deg)`;
 imgKobdrd.style.filter = `hue-rotate(${rotateHues[randomIndex][1]}deg)`;
