@@ -248,6 +248,7 @@ h3 a:hover {
   border-radius: 20px;
   background-size: cover;
   background-position: center;
+  background-color: var(--secondary-color);
 }
 
 @keyframes jump {
