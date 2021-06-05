@@ -191,12 +191,15 @@ h2 {
   background-color: var(--secondary-color);
 }
 
+.project__card {
+  margin-top: 3rem;
+}
+
 .project__img {
   width: 500px;
   height: 280px;
   object-fit: cover;
   border-radius: 20px;
-  margin-top: 3rem;
 }
 
 h3 {
@@ -228,6 +231,22 @@ h3 a:hover {
 
 .animate:hover .wip {
   animation: jump 1s;
+}
+.gif-on-hover:hover img {
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.gif-on-hover.nezha:hover {
+  background-image: url(./resources/nezha-animated-2.gif);
+}
+.gif-on-hover.kobrd:hover {
+  background-image: url(./resources/kobrd-animated-1.gif);
+}
+
+.gif-on-hover {
+  border-radius: 20px;
+  background-size: cover;
 }
 
 @keyframes jump {

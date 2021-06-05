@@ -103,8 +103,9 @@
         </div>
         <div class="projects__content row">
           <div class="project__card animate">
-            <div class="img">
+            <div class="gif-on-hover nezha">
               <img
+                class="project__img"
                 loading="lazy"
                 srcset="
                   ./resources/Nezhas-journey.png     1792w,
@@ -112,7 +113,6 @@
                 "
                 sizes="(min-width: 600px) 50vw, 90vw"
                 alt="A screenshot from 2D platform game Nezha's Journey"
-                class="project__img nezha"
               />
             </div>
             <h3 class="project__title">
@@ -124,16 +124,18 @@
             </p>
           </div>
           <div class="project__card">
-            <img
-              loading="lazy"
-              srcset="
-                ./resources/kobrd.png     1474w,
-                ./resources/kobrd_500.png  500w
-              "
-              sizes="(min-width: 600px) 50vw, 90vw"
-              alt="A screenshot from Korean typing app Kobrd"
-              class="project__img kobrd"
-            />
+            <div class="gif-on-hover kobrd">
+              <img
+                loading="lazy"
+                srcset="
+                  ./resources/kobrd.png     1474w,
+                  ./resources/kobrd_500.png  500w
+                "
+                sizes="(min-width: 600px) 50vw, 90vw"
+                alt="A screenshot from Korean typing app Kobrd"
+                class="project__img"
+              />
+            </div>
             <h3 class="project__title">
               <a
                 href="https://web-nuo.github.io/Kobrd/"
