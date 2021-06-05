@@ -247,6 +247,7 @@ h3 a:hover {
 .gif-on-hover {
   border-radius: 20px;
   background-size: cover;
+  background-position: center;
 }
 
 @keyframes jump {
