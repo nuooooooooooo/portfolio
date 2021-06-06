@@ -282,13 +282,32 @@ h3 a:hover {
   margin-bottom: 1.5rem;
 }
 
-.contacts__list-item a {
+.contacts__link {
   font-size: 1rem;
   text-decoration: none;
-  color: inherit;
+  color: var(--main-color);
+  position: relative;
 }
 
-.contacts__list a:hover {
+.contacts__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--secondary-color);
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in;
+}
+
+.contacts__link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.contacts__link:hover {
   color: var(--secondary-color);
 }
 
