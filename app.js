@@ -34,7 +34,7 @@ const colors = [
 ];
 
 const rotateHues = [
-  [150, 235], //270 pour un beau vert
+  [150, 235],
   [90, 210],
   [220, 340],
   [260, 20],
@@ -44,7 +44,7 @@ const rotateHues = [
 ];
 
 // script for the project hue and color palette changes
-let randomIndex = Math.floor(Math.random() * 7);
+let randomIndex = Math.floor(Math.random() * rotateHues.length);
 const imgHueNezha = document.querySelector(".nezha");
 const imgKobdrd = document.querySelector(".kobrd");
 
@@ -55,3 +55,6 @@ document.documentElement.style.setProperty(
 
 imgHueNezha.style.filter = `hue-rotate(${rotateHues[randomIndex][0]}deg)`;
 imgKobdrd.style.filter = `hue-rotate(${rotateHues[randomIndex][1]}deg)`;
+
+// TODO: dark theme, auto theme, light theme
+// TODO: blog
