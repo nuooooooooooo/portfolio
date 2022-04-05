@@ -205,7 +205,6 @@ h2 {
 h3 {
   font-size: 1.1rem;
   margin: 1.1rem 0;
-
   display: flex;
 }
 
@@ -357,6 +356,9 @@ div.iris div {
 }
 
 @media (min-width: 700px) {
+.row {
+  flex-direction: row;
+}
   .contacts__list {
     flex: 1;
   }
@@ -365,13 +367,16 @@ div.iris div {
     display: block;
   }
 
-  .project__card + .project__card {
-    margin-left: 4rem;
+  .projects__content {
+    flex-direction: row;
+    gap: 5%;
+    flex-wrap: wrap;
   }
 
-  .row {
-    flex-direction: row;
-  }
+   .project__card {
+    max-width: 450px;
+  } 
+
 
   h1 {
     font-size: 2.7rem;

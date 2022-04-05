@@ -47,6 +47,7 @@ const rotateHues = [
 let randomIndex = Math.floor(Math.random() * rotateHues.length);
 const imgHueNezha = document.querySelector(".nezha");
 const imgKobdrd = document.querySelector(".kobrd");
+const imgMusicViz = document.querySelector(".viz");
 
 document.documentElement.style.setProperty(
   "--secondary-color",
@@ -55,6 +56,7 @@ document.documentElement.style.setProperty(
 
 imgHueNezha.style.filter = `hue-rotate(${rotateHues[randomIndex][0]}deg)`;
 imgKobdrd.style.filter = `hue-rotate(${rotateHues[randomIndex][1]}deg)`;
+imgMusicViz.style.filter = `hue-rotate(${rotateHues[randomIndex][1]}deg)`;
 
 // TODO: dark theme, auto theme, light theme
 // TODO: blog
